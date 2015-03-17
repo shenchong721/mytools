@@ -1,2 +1,2 @@
 # mytools
-some usefull tools for coding 
+some useful tools for coding 
