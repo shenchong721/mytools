@@ -1,0 +1,21 @@
+﻿用Virtualbox 在linux和windows下 双系统互启
+
+1,安装virtaulbox:
+(1)安装：virtualbox-host-modules virtualbox-host-modules-lts virtualbox-host-dkms
+(2)定制内核的主机:
+$ dkms install vboxhost/$(pacman -Q virtualbox|awk {'print $2'}|sed 's/\-.\+//') -k $(uname -rm|sed 's/\ /\//')
+(3)然后装载模块:
+$ modprobe vboxdrv
+
+参考文章：https://wiki.archlinux.org/index.php/VirtualBox_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29
+
+2,电脑上配置win7硬盘文件
+(1)创建前请分配所有硬盘分区的读写权限，假如有三个 sda1 sda2 sda3 那么命令行下
+ sudo chmod 666 /dev/sda2
+ sudo chmod 666 /dev/sda3 更多以此类推
+(2)使用如下指令创建 wmdk 硬盘的映射文件
+$ sudo vboxmanage internalcommands createrawvmdk -filename /home/sc/rawdisk.vmdk -rawdisk /dev/sda -relative
+
+注意，这里是sda，即为整个系统盘，不仅仅为电脑中win7所占据的磁盘
+
+参考文章：http://forum.ubuntu.org.cn/viewtopic.php?f=139&t=360338
