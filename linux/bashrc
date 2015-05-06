@@ -20,6 +20,7 @@ alias lll='ls -al'
 alias clc='clear'
 alias logedu='sudo /home/sc/logedu.sh'
 alias logshadowsocks='sslocal -c /etc/shadowsocks/config.json > /dev/null 2>&1 &'
+alias logvirtualbox='sudo modprobe vboxdrv ; sudo virtualbox'
 #added by sc in 20140915 for ibus
 #export GTK_IM_MODULE=ibus
 #export XMODIFIERS=@im=ibus
