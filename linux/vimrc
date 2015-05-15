@@ -1,29 +1,96 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" add for vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+Bundle 'gmarik/vundle'
+
+" Plugin 和　Ｂundle 一样的效果
+
+"如果插件来自 vim-scripts，你直接写插件名就行了
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+Bundle 'Syntastic'
+
+" let Vundle manage Vundle, required
+"Plugin 'gmarik/Vundle.vim'
+
+
+" 如果你的插件来自github，写在下方，只要作者名/项目名就行了
+"Plugin 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-fugitive' "如这里就安装了vim-fugitive这个插件
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+
+
+"如使用自己的git库的插件，像下面这样做 
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
+
+
+"自己电脑中的plugin
+"Plugin 'file:///home/gmarik/path/to/plugin'
+
+
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+"Plugin 'user/L9', {'name': 'newL9'}
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"vim-powerline插件
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+set t_Co=256
+let g:Powerline_symbols = 'unicode'
+set encoding=utf8
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 显示相关  
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable  
-syntax on "语法高亮
-"选择自己的vim配色方案
-"colorscheme  molokai
-" 总是显示状态栏
-set laststatus=2
-"显示行号
-set nu
-" 显示光标当前位置
-set ruler
-" 高亮显示当前行/列
-set cursorline
-"set cursorcolumn
-" 高亮显示搜索结果
-set hlsearch
+syntax on 			"语法高亮
+"colorscheme  molokai 	"选择自己的vim配色方案
+set laststatus=2  		" 总是显示状态栏
+set nu      			"显示行号
+set ruler  			" 显示光标当前位置
+set cursorline  		" 高亮显示当前行/列
+"set cursorcolumn	
+set hlsearch  		" 高亮显示搜索结果
+set tabstop=4 		"按tab键时产生的是4个空格
 
 
 
 "let g:molokai_original = 1
-"set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
-"winpos 5 5          " 设定窗口位置  
-"set lines=40 columns=155    " 设定窗口大小  
+"set shortmess=atI   	" 启动的时候不显示那个援助乌干达儿童的提示  
+"winpos 5 5         	" 设定窗口位置  
+"set lines=40 columns=155  "设定窗口大小  
 set ruler
 
 

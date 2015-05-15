@@ -21,10 +21,13 @@ alias clc='clear'
 alias logedu='sudo /home/sc/logedu.sh'
 alias logshadowsocks='sslocal -c /etc/shadowsocks/config.json > /dev/null 2>&1 &'
 alias logvirtualbox='sudo modprobe vboxdrv ; sudo virtualbox'
-#added by sc in 20140915 for ibus
-#export GTK_IM_MODULE=ibus
-#export XMODIFIERS=@im=ibus
-#export QT_IM_MODULE=ibus
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias FUCK='fuck'
+
+#added by sc in 20140915 for fcitx
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
 
 
 #pylearn2
