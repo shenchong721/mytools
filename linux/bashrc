@@ -13,6 +13,10 @@ PS1='${arch_chroot:+($arch_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[01;34
 #PS1='[\u@\h \W]\$ '
 
 
+alias mkdir="mkdir -v"
+alias mv="mv -v"
+alias cp="cp -v"
+alias python="python2"
 alias clip="xsel -b"
 alias ls='ls --color=auto'
 alias ll='ls -l'
