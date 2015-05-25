@@ -19,3 +19,6 @@ $ sudo vboxmanage internalcommands createrawvmdk -filename /home/sc/rawdisk.vmdk
 注意，这里是sda，即为整个系统盘，不仅仅为电脑中win7所占据的磁盘
 
 参考文章：http://forum.ubuntu.org.cn/viewtopic.php?f=139&t=360338
+
+3,如果运行时提示‘your pc needs to restart’或‘our PC needs to be repaired’,
+请勾选设置->系统选项中的'启用I/O APIC'，'启用EFI',处理器中的'启用PAE/NX'.
