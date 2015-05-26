@@ -151,7 +151,10 @@ set cursorline  		" 高亮显示当前行/列
 "set cursorcolumn	
 set hlsearch  		" 高亮显示搜索结果
 set tabstop=4 		"按tab键时产生的是4个空格
-
+set shiftwidth=4          "设置缩进的空个数为４
+set autoindent            "设置自动缩进
+"set noautoindent       	"不用自动缩进
+set cindent			"设置c/c++语言的自动缩进
 
 
 "let g:molokai_original = 1

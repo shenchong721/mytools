@@ -28,6 +28,7 @@ alias logvirtualbox='sudo modprobe vboxdrv ; sudo virtualbox'
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias FUCK='fuck'
 alias logfile="nautilus ./ &"
+alias sublime='LD_PRELOAD=/usr/lib/libsublime-imfix.so sublime'
 
 #added by sc in 20140915 for fcitx
 export GTK_IM_MODULE=fcitx
@@ -41,6 +42,7 @@ export PYLEARN2_DATA_PATH=/home/sc/code/pylearn2/data
 export PYLEARN2_VIEWER_COMMAND="feh"
 
 
+PATH=$PATH:/usr/local/MATLAB/R2014a/bin
 #export LANGUAGE=""
 
 

@@ -1,2 +1,2 @@
 1,xsel : 剪贴板控制软件
-
+2,audacious+osdlyrics:  播放器及歌词显示
