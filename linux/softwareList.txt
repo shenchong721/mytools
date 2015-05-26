@@ -1,2 +1,6 @@
 1,xsel : 剪贴板控制软件
 2,audacious+osdlyrics:  播放器及歌词显示
+3,gnome-shell扩展：
+	application menu:左上角显示所有的已安装程序
+	activities configurator :左上角显示一段自定义的话
+	media player indicator :右上角显示音乐播放器
