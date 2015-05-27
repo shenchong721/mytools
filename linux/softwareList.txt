@@ -5,3 +5,4 @@
 	activities configurator :左上角显示一段自定义的话
 	media player indicator :右上角显示音乐播放器
 4,guake:一个比较方便的终端，可以设置自动启动，具体设置看gnome autostart
+5,tmux:多终端管理器，可多屏，分屏等
