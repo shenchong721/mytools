@@ -42,7 +42,9 @@ export PYLEARN2_DATA_PATH=/home/sc/code/pylearn2/data
 export PYLEARN2_VIEWER_COMMAND="feh"
 
 
-PATH=$PATH:/usr/local/MATLAB/R2014a/bin
+PATH=$PATH:/usr/local/MATLAB/R2014a/bin:/home/sc/sc/git/pylearn2/pylearn2/scripts
+
+
 #export LANGUAGE=""
 
 
