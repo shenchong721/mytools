@@ -30,6 +30,7 @@ alias FUCK='fuck'
 alias logfile="nautilus ./ &"
 alias sublime='LD_PRELOAD=/usr/lib/libsublime-imfix.so sublime'
 alias zotero='/home/sc/sc/install/Zotero_linux-x86_64/zotero >/dev/null 2>&1 &'
+alias mygit='git commit -m "little changes" ; git push origin master'
 
 #added by sc in 20140915 for fcitx
 export GTK_IM_MODULE=fcitx
@@ -45,10 +46,10 @@ export PYLEARN2_VIEWER_COMMAND="feh"
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk
 
 
-PATH=$PATH:/usr/local/MATLAB/R2014a/bin:/home/sc/sc/git/pylearn2/pylearn2/scripts
+PATH=$PATH:/usr/local/MATLAB/R2014a/bin:/home/sc/sc/git/pylearn2/pylearn2/scripts:/opt/cuda/bin/
 
 
-
+export CPLUS_INCLUDE_PATH=/home/sc/install/eigen_3.2.5
 
 
 
