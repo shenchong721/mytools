@@ -8,4 +8,9 @@
 5,tmux:多终端管理器，可多屏，分屏等
 6,shutter:截图软件
 7,pldgin：一个聊天通信平台
+<<<<<<< HEAD
 8,dia：一个画图的软件
+=======
+8,onboard:the virtual board in linux
+9,net-tools: including ifconfig 
+>>>>>>> 7b81f4b6d1d713c1193c4d5e24ca891e3eceb920
